@@ -9,7 +9,13 @@
 			password="bootsies"
 			driverClassName="com.mysql.jdbc.Driver"
 			url="jdbc:mysql://localhost:3306/restbootstrap"
-			maxActive="8"
-			maxIdle="4"/>
+            initialSize="0"
+            maxActive="20"
+            maxIdle="10"
+            minIdle="0"
+            maxWait="-1"
+            validationQuery="SELECT 1"
+            testOnBorrow="true"
+            factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"/>
 
 </Context>

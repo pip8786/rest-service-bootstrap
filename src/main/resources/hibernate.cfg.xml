@@ -7,7 +7,6 @@
 		<property name="show_sql">true</property>
 		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="current_session_context_class">thread</property>
-		<property name="hbm2ddl.auto">update</property>
 
 		<property name="hibernate.max_fetch_depth">3</property>
 
