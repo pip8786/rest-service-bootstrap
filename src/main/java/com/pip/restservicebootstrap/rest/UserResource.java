@@ -19,7 +19,7 @@ public class UserResource {
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<User> getUser(@Context HttpServletRequest request) {
+	public List<User> getUsers(@Context HttpServletRequest request) {
 		return DataAccess.getInstance().getAllUsers();
 	}
 }
